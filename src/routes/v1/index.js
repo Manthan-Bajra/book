@@ -1,6 +1,13 @@
 const express = require('express');
 const authRoute = require('./auth.route');
 const userRoute = require('./user.route');
+const headerRoute = require('./header.route');
+const bookRoute = require('./book.route');
+const chapterRoute = require('./chapter.route');
+const sthanRoute = require('./sthan.route');
+const shlokRoute = require('./shlok.route');
+const pageRoute = require('./page.route');
+const planRoute = require('./plan.route');
 const docsRoute = require('./docs.route');
 const config = require('../../config/config');
 
@@ -12,8 +19,34 @@ const defaultRoutes = [
     route: authRoute,
   },
   {
-    path: '/users',
-    route: userRoute,
+    path: '/header',
+    route: headerRoute,
+  },
+  
+  {
+    path: '/book',
+    route: bookRoute,
+  },
+  
+  {
+    path: '/chapter',
+    route: chapterRoute,
+  },
+  {
+    path: '/sthan',
+    route: sthanRoute,
+  },
+  {
+    path: '/shlok',
+    route: shlokRoute,
+  },
+  {
+    path: '/page',
+    route: pageRoute,
+  },
+  {
+    path: '/plan',
+    route: planRoute,
   },
 ];
 
